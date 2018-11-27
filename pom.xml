@@ -23,6 +23,7 @@
 		<commons-codec.version>1.10</commons-codec.version>
 		<bcprov-jdk15on.version>1.52</bcprov-jdk15on.version>
 		<javacsv.version>2.0</javacsv.version>
+		<poi.version>3.14</poi.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -47,6 +48,24 @@
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
 			<version>2.6</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>${poi.version}</version>
+		</dependency>
+
+		<!-- 条形码、二维码生成 -->
+		<dependency>
+			<groupId>com.google.zxing</groupId>
+			<artifactId>core</artifactId>
+			<version>3.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.zxing</groupId>
+			<artifactId>javase</artifactId>
+			<version>3.3.0</version>
 		</dependency>
 	</dependencies>
 
